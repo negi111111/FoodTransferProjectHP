@@ -33,6 +33,67 @@
 
     </script>
 
+    <style type="text/css">
+        .chk1 {
+            border: 3px outset #0000cc;
+            background-color: #99ffff;
+        }
+
+        .chk2 {
+            border: 3px outset #cc0000;
+            background-color: #ffffcc;
+        }
+
+        .button8 {
+            /* 文字サイズを1.4emに指定 */
+            font-size: 1.4em;
+
+            /* 文字の太さをboldに指定 */
+            font-weight: bold;
+
+            /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+            padding: 10px 30px;
+
+            /* 文字色を白色に指定 */
+            color: #fff;
+
+            /* ボーダーをなくす */
+            border-style: none;
+
+            /* ボタンの影の指定
+     * 影の横幅を2px
+     * 縦長を2px
+     * ぼかしを3px
+     * 広がりを1px
+     * 色を#666（グレー）に指定 */
+            box-shadow: 2px 2px 3px 1px #666;
+            -moz-box-shadow: 2px 2px 3px 1px #666;
+            -webkit-box-shadow: 2px 2px 3px 1px #666;
+
+            /* テキストの影の指定
+     * 影の横幅を1px
+     * 縦長を1px
+     * ぼかしを2px
+     * 色を#000（黒）に指定 */
+            text-shadow: 1px 1px 2px #000;
+
+            /* グラデーションの指定 */
+            background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+            background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+
+            /* 角丸の指定 */
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        button.button8:hover {
+            /* 透明度を20%に指定 */
+            opacity: 0.8;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -48,8 +109,9 @@
             <h2>** Department of Informatics, The University of Electro-Communication</h2>
             <br>
             <br>
+
             <form>
-                <input type="button" value="Open the PDF file" onClick="window.open('eccv2018artworkshop.pdf')">
+                <input type="button" value="Open the PDF file" class="button8" onClick="window.open('eccv2018artworkshop.pdf')">
             </form>
 
             <br><br>
