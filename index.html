@@ -21,83 +21,100 @@
     <![endif]-->
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-87791873-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-87791873-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 
 </head>
 <body>
 
-<!-- <img src="./subimg/uec.png" width=100 height=100> -->
+    <!-- <img src="./subimg/uec.png" width=100 height=100> -->
 
-<div class="container">
-    <header class="codrops-header">
-<br><br>
-        <h1>Image-to-Image Food Domain Transfer using Conditional CycleGAN</h1>
-        <br>
-<h2>The University of Electro-Communications, Tokyo, Japan.</h2> <br>
-	    
-	    <div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MBFnZMf9bMk?autoplay=1&loop=1&playlist=MBFnZMf9bMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-	    
-<br><br>
-<h2>Abstract: </h2>
-<h3>This paper proposes “Food Image Transformation” based on the Conditional Cycle GAN (cCycle GAN)<br> with a large-scale food image data collected from the Twitter Stream for more than five years.<br> By the experiments, we showed that two hundred and thirty thousand food images<br> with cCycle GAN enabled very natural food photo transform among ten kinds of typical Japanese foods:<br> ramen noodle, curry rice, fried rice, gyodon, cold Chinese noodle,<br> spaghetti with meat source, white rice, eel bown, and yakisoba.</h3>
+    <div class="container">
+        <header class="codrops-header">
+            <br><br>
+            <h1>Food Category Transfer with Conditional Cycle GAN and a Large-scale Food Image Dataset</h1>
+            <br>
+            <h2>Ryosuke Tanno*, Daichi Horita** and Keiji Yanai**</h2> <br>
+            <h2>* Technical Development, NTT Communications Corporation</h2> <br>
+            <h2>** Department of Informatics, The University of Electro-Communication</h2>
 
-        <nav class="codrops-demos">
-            <!-- <a href="index.html">Home</a> -->
-            <a class="current-demo" href="index.html">Demo 1</a>
-            <a href="foods-museum2.html">Demo 2</a>
-            <a href="foods-museum3.html">Demo 3</a>
-            <a href="foods-museum4.html">Demo 4</a>
-        </nav>
-    </header>
-    <section class="main">
-        <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
-            <img class="ri-loading-image" src="images/loading.gif"/>
-            <ul>
-                <script>
-                    for ( var i = 0 ; i < 352 ; i++ ){
-                        document.write(`<li><a href='#'><img src='images/medium/1/img_${i}.jpg'/></a></li>`);
-                    }
-                </script>
-            </ul>
-        </div>
-    </section>
 
-</div>
-<div style="text-align: center;">
-<img src="./subimg/menu.png" width=60% height=50%>
-</div>
+            <br><br>
+            <h2>Abstract: </h2>
+            <h3>This paper describes “Food Image Transformation” based on a Conditional Cycle GAN (cCycle GAN) with a large-scale food image data collected from the Twitter Stream.<br>Conditional Cycle GAN is an extension of CycleGAN, which enables “Food Category Transfer” among ten kinds of foods mutually keeping the shape of a given food. By the experiments,<br> we show that two hundred and thirty thousand food images with cCycle GAN enables very natural food category transfer among ten kinds of typical Japanese foods: <br>ramen noodle, curry rice, fried rice, beef rice bowl, chilled noodle, spaghetti with meat source, white rice, eel bowl, and fried noodle.</h3>
 
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=nUboBFyy4Cc?autoplay=1&loop=1&playlist=nUboBFyy4Cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-	
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
-<script type="text/javascript">
-	$(function() {
+            <br>
+            <br>
 
-		$( '#ri-grid' ).gridrotator( {
-			w320 : {
-				rows : 3,
-				columns : 4
-			},
-			w240 : {
-				rows : 3,
-				columns : 3
-			}
-		} );
+            <div style="text-align: center;">
+                <img src="./eccv.png" width=80% height=70%>
+            </div>
+            <br>
+            <h3>Figure : The left most images are input images, and the rest images are generated images with each of the ten categories</h3>
+            <br>
+            <div style="text-align: center;">
+                <img src="./10k_fake.png" width=80% height=70%>
+            </div>
 
-	});
-</script>
+            <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBFnZMf9bMk?autoplay=1&loop=1&playlist=MBFnZMf9bMk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <nav class="codrops-demos">
+                <!-- <a href="index.html">Home</a> -->
+                <a class="current-demo" href="index.html">Demo 1</a>
+                <a href="foods-museum2.html">Demo 2</a>
+                <a href="foods-museum3.html">Demo 3</a>
+                <a href="foods-museum4.html">Demo 4</a>
+            </nav>
+        </header>
+        <section class="main">
+            <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
+                <img class="ri-loading-image" src="images/loading.gif" />
+                <ul>
+                    <script>
+                        for (var i = 0; i < 352; i++) {
+                            document.write(`<li><a href='#'><img src='images/medium/1/img_${i}.jpg'/></a></li>`);
+                        }
+                    </script>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <div style="text-align: center;">
+        <img src="./subimg/menu.png" width=60% height=50%>
+    </div>
+
+    <div style="text-align: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=nUboBFyy4Cc?autoplay=1&loop=1&playlist=nUboBFyy4Cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#ri-grid').gridrotator({
+                w320: {
+                    rows: 3,
+                    columns: 4
+                },
+                w240: {
+                    rows: 3,
+                    columns: 3
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>
