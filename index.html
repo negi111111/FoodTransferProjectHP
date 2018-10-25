@@ -1,145 +1,72 @@
-<!DOCTYPE html>
-<html lang="jp">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FoodTransferProject</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Animated Responsive Image Grid - Cycling through a set of images in a responsive grid." />
-    <meta name="keywords" content="grid, images, thumbnails, responsive, css3, jquery, javascript, random, transition, 3d, perspective" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <title>Food Image Transformation Project Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <script src="lib.js" type="text/javascript"></script>
+    <script src="popup.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="./assets/fonts/font-awesome.min.css" rel="stylesheet">
-    <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="css/fallback.css" />
-    </noscript>
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="css/fallback.css" />
-    <![endif]-->
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-87791873-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-    <style type="text/css">
-        .chk1 {
-            border: 3px outset #0000cc;
-            background-color: #99ffff;
+    <style type="text/css" media="all">
+        IMG {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            FLOAT: right;
+            PADDING-BOTTOM: 0px;
+            PADDING-TOP: 0px
         }
 
-        .chk2 {
-            border: 3px outset #cc0000;
-            background-color: #ffffcc;
+        #primarycontent {
+            MARGIN-LEFT: auto;
+            ;
+            WIDTH: expression(document.body.clientWidth > 1000? "1000px": "auto");
+            MARGIN-RIGHT: auto;
+            TEXT-ALIGN: left;
+            max-width:
+                1000px
         }
 
-        .button8 {
-            /* 文字サイズを1.4emに指定 */
-            font-size: 1.4em;
-
-            /* 文字の太さをboldに指定 */
-            font-weight: bold;
-
-            /* 縦方向に10px、
-     * 横方向に30pxの余白を指定 */
-            padding: 10px 30px;
-
-            /* 文字色を白色に指定 */
-            color: #fff;
-
-            /* ボーダーをなくす */
-            border-style: none;
-
-            /* ボタンの影の指定
-     * 影の横幅を2px
-     * 縦長を2px
-     * ぼかしを3px
-     * 広がりを1px
-     * 色を#666（グレー）に指定 */
-            box-shadow: 2px 2px 3px 1px #666;
-            -moz-box-shadow: 2px 2px 3px 1px #666;
-            -webkit-box-shadow: 2px 2px 3px 1px #666;
-
-            /* テキストの影の指定
-     * 影の横幅を1px
-     * 縦長を1px
-     * ぼかしを2px
-     * 色を#000（黒）に指定 */
-            text-shadow: 1px 1px 2px #000;
-
-            /* グラデーションの指定 */
-            background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
-            background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
-
-            /* 角丸の指定 */
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-        }
-
-        button.button8:hover {
-            /* 透明度を20%に指定 */
-            opacity: 0.8;
-        }
-
-
-        a:link {
-            text-decoration: underline;
-            background-color: #ccccff;
-            color: #333333;
-        }
-
-        a:visited {
-            text-decoration: underline;
-            color: #333333;
-        }
-
-        a:active {
-            text-decoration: underline;
-            color: #333333;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            background-color: #ffcc99;
-            color: #333333;
+        BODY {
+            TEXT-ALIGN: center
         }
     </style>
 
+    <meta content="MSHTML 6.00.2800.1400" name="GENERATOR">
+    <script src="b5m.js" id="b5mmain" type="text/javascript"></script>
 </head>
+
 <body>
 
-    <!-- <img src="./subimg/uec.png" width=100 height=100> -->
-
-    <div class="container">
-        <header class="codrops-header">
-            <br><br>
+    <div id="primarycontent">
+        <center>
             <h1>Magical Rice Bowl: A Real-time Food Category Changer</h1>
-            <br>
-            <h2>Ryosuke Tanno*, Daichi Horita**, Shu Naritomi**, Wataru Shimoda** and Keiji Yanai**</h2> <br>
-            <h2>* Technology Development, NTT Communications Corporation</h2> <br>
-            <h2>** Department of Informatics, The University of Electro-Communication</h2>
-            <br>
-            <br>
+        </center>
+        <center>
+            <h2><a href="https://negi111111.github.io/">Ryosuke Tanno</a>&nbsp;&nbsp;&nbsp;
+  <a href="">Daichi Horita</a>&nbsp;&nbsp;&nbsp;
+  <a href="">Wataru Shimoda</a>&nbsp;&nbsp;&nbsp;
+  <a href="http://acc.cs.uec.ac.jp/yanai/index.html">Keiji Yanai</a></h2>
+        </center>
+        <center>
+            <h2><a href="http://mm.cs.uec.ac.jp/e/">Department of Informatics, The University of Electro-Communication</a></h2>
+        </center>
+        <center>
+            <h2>In ACM MM 2018</h2>
+        </center>
+        <p></p>
 
-            <form>
-                <input type="button" value="Open the PDF file" class="button8" onClick="window.open('demo_mm18_final.pdf')">
-            </form>
+        <h2 align='center'></h2>
+        <table border="0" align="center" cellspacing="0" cellpadding="20">
+            <td align="center" valign="middle">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nUboBFyy4Cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </td>
+        </table>
 
-            <br><br>
-            <h2>Abstract: </h2>
-            <h3>In this paper, we demonstrate "Real-time Food Category
+        <p>
+<h2>Abstract</h2>
+
+        <div style="font-size:14px">
+            <p>In this paper, we demonstrate "Real-time Food Category
             Change" based on a Conditional Cycle GAN (cCycle GAN)
             with a large-scale food image data collected from the Twit-
             ter Stream. Conditional Cycle GAN is an extension of Cy-
@@ -153,88 +80,142 @@
             food category change among ten kinds of typical Japanese
             foods: ramen noodle, curry rice, fried rice, beef rice bowl,
             chilled noodle, spaghetti with meat source, white rice, eel
-            bowl, and fried noodle.</h3>
-
-            <br>
-            <br>
-
-            <br>
-            <br>
-
-            <div style="text-align: center;">
-                <img src="./eccvart.jpg" width=80% height=70%>
-            </div>
-            <br>
-            <!-- <h3>Figure : The left most images are input images, and the rest images are generated images with each of the ten categories</h3> -->
-            <br>
-            <div style="text-align: center;">
-                <img src="./eccv.png" width=80% height=70%>
-            </div>
-
-            <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MBFnZMf9bMk?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-
-            <h2>The above video was created by <a href="https://twitter.com/negi111111">Ryosuke Tanno</a></h2>
-
-            <!-- https://youtu.be/nUboBFyy4Cc -->
-            <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nUboBFyy4Cc?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-
-            <!-- https://youtu.be/IEyKQ1i-fd4 -->
-
-            <h2>The above video was created by <a href="https://twitter.com/negi111111">Ryosuke Tanno</a></h2>
-
-            <div style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IEyKQ1i-fd4?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-
-            <h2>The above video was created by <a href="https://twitter.com/nenoMake">Shu Naritomi</a></h2>
-
-            <!-- <nav class="codrops-demos"> -->
-            <!-- <a href="index.html">Home</a> -->
-            <!-- <a class="current-demo" href="index.html">Demo 1</a>
-                <a href="foods-museum2.html">Demo 2</a>
-                <a href="foods-museum3.html">Demo 3</a>
-                <a href="foods-museum4.html">Demo 4</a> -->
-            <!-- </nav> -->
-        </header>
-        <section class="main">
-            <div id="ri-grid" class="ri-grid ri-grid-size-1 ri-shadow">
-                <img class="ri-loading-image" src="images/loading.gif" />
-                <ul>
-                    <script>
-                        for (var i = 0; i < 352; i++) {
-                            document.write(`<li><a href='#'><img src='images/medium/1/img_${i}.jpg'/></a></li>`);
-                        }
-                    </script>
-                </ul>
-            </div>
-        </section>
-
+            bowl, and fried noodle.</p>
     </div>
 
-    <div style="text-align: center;">
-        <img src="./subimg/menu.png" width=60% height=50%>
-    </div>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.gridrotator.js"></script>
-    <script type="text/javascript">
-        $(function () {
+    <a href=""><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="images/paper_thumbnail.png" width=170></a>
+    <br>
 
-            $('#ri-grid').gridrotator({
-                w320: {
-                    rows: 3,
-                    columns: 4
-                },
-                w240: {
-                    rows: 3,
-                    columns: 3
-                }
-            });
 
-        });
-    </script>
+
+    <h2>Paper</h2>
+    <p><a href="./demo_mm18_final.pdf">demo_mm18_final.pdf</a>,  2018. </p>
+
+    <h2>Citation</h2>
+    <p>Ryosuke Tanno, Daichi Horita, Shu Naritomi, Wataru Shimoda and Keiji Yanai. "FoodChangeLens:CNN-based Food Transformation on HoloLens", in Proc. of ACM International Conference Multimedia, 2018.
+<a href="FoodImageTransformation.txt">Bibtex</a>
+
+</p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 align='center'> Another Application</h2>
+    <table border="0" cellspacing="0" cellpadding="20">
+        <td align="center" valign="middle">
+            <h2>Food Transfer Image Museum on HoloLens</h2>
+            <p><iframe width="480" height="270" src="https://www.youtube.com/embed/IEyKQ1i-fd4" frameborder="0" allowfullscreen></iframe></p>
+            <div style="width:480px; text-align:left; font-size:14px">Shu Naritomi made the above.</div>
+        </td>
+
+        <td align="center" valign="middle">
+            <h2>Food Image Transformation using HoloLens</h2>
+            <p><iframe width="480" height="270" src="https://www.youtube.com/embed/yBM9VgXj9e0" frameborder="0" allowfullscreen></iframe></p>
+            <div style="width:480px; text-align:left; font-size:14px">Shu Naritomi and Takumi Ege made the above.</div>
+        </td>
+
+        </tr>
+    </table>
+
+    <h1 align="center"> Computer Vision Art Gallery of Food Image Transformation</h1>
+    In 2018, for the <a href="https://sites.google.com/view/eccvfashion/home">First Workshop on Computer Vision for Fashion, Art and Design</a>, at the European Conference on Computer Vision (ECCV) in Munich, Germany, a call was put out for artworks dealing with computer vision technologies. We were chosen for <a href="https://computervisionart.com/">Longlist Award</a> on ECCV Art Workshop.
+    <table border="0" width="1000px" cellpadding="10">
+        <tr>
+            <td width="500px" align="center" valign="top">
+                <h2>Paella</h2>
+                <img src="ECCV_ART2018/0.png" width="500px">
+                </div>
+            </td>
+
+            <td align="center" width="500px" valign="top">
+                <h2>Tom Yum Goong </h2>
+                <img src="ECCV_ART2018/1.png" width="500px">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td width="500px" align="center" valign="top">
+                <h2>Pizza</h2>
+                <img src="ECCV_ART2018/2.png" width="500px">
+                </div>
+            </td>
+
+            <td align="center" width="500px" valign="top">
+                <h2>Beef Bowl</h2>
+                <img src="ECCV_ART2018/3.png" width="500px">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td width="500px" align="center" valign="top">
+                <h2>Magical Rice Bowl !?</h2>
+                <img src="ECCV_ART2018/4.png" width="500px">
+                </div>
+            </td>
+
+            <td align="center" width="500px" valign="top">
+                <h2>Magical Rice Bowl !?</h2>
+                <img src="ECCV_ART2018/5.png" width="500px">
+
+            </td>
+        </tr>
+
+        <tr>
+            <td width="500px" align="center" valign="top">
+                <h2>Ramen</h2>
+                <img src="ECCV_ART2018/6.png" width="500px">
+                </div>
+            </td>
+
+            <td align="center" width="500px" valign="top">
+                <h2>Curry</h2>
+                <img src="ECCV_ART2018/7.png" width="500px">
+
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <h2>Related Work</h2>
+
+    <ul id='relatedwork'>
+        <li>
+            S. Jiang and Y. Fu. <a href=""><strong>"Fashion Style Generators"</strong></a>, in Proc. of
+            the Twenty-Sixth International Joint Conference on Artificial
+            Intelligence, 2017.
+        </li>
+        <li>
+            J. Johnson, A. Alahi, and L.F. Fei <a href=""><strong>"Perceptual Losses for Real-Time Style Transfer and Super-Resolution"</strong></a>, in Proc. of European Conference on Computer Vision, 2016.
+        </li>
+        <li>
+            Y. Matsuda, H. Hoashi, and K. Yanai <a href=""><strong>"Recognition of Multiple-Food Images by Detecting Candidate Regions"</strong></a>, in Proc. of IEEE International Conference on Multimedia and Expo, 2012.
+        </li>
+        <li>
+            A. Odena, C. Olah, and J. Shlens <a href=""><strong>"Conditional Image Synthesis
+                    With Auxiliary Classifier GANs"</strong></a>, in Proc. of IEEE International Conference on Multimedia and Expo, 2012.
+        </li>
+        <li>
+            K. Yanai and Y. Kawano <a href=""><strong>"Twitter Food Image Mining and
+                    Analysis for One Hundred Kinds of Foods"</strong></a>, in Proc. of Pacifit-Rim
+            Conference on Multimedia (PCM), 2014.
+        </li>
+        <li>
+            K. Yanai and R. Tanno <a href=""><strong>"Conditional Fast Style Transfer Networks"</strong></a>, in Proc. of ACM International Conference on Multimedia Retrieval, 2017.
+        </li>
+        <li>
+            J. Y. Zhu, T. Park, P. Isola, and A. A. Efros <a href=""><strong>"Unpaired
+                    Image-to-Image Translation using Cycle-Consistent Adversarial
+                    Networks"</strong></a>, in Proc. of IEEE International Conference on Computer Vision, 2017.
+        </li>
+    </ul>
+
+
+    <br>
+    <h2>Acknowledgement</h2>
+    <p>This work was supported by JSPS KAKENHI Grant Number 15H05915, 17H01745, 17H05972, 17H06026 and 17H06100.</p>
+
 </body>
 </html>

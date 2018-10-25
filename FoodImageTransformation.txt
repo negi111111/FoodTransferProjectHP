@@ -1,0 +1,7 @@
+@InProceedings{tann18,
+  author="Tanno, R. and Horita, D. and Shimoda, W. and Yanai, K.",
+  title="Magical Rice Bowl: Real-time Food Category Changer",
+  booktitle=multimedia,
+  year="2018"
+}
+@string{acmmm = "Proc. of ACM International Conference Multimedia"}
